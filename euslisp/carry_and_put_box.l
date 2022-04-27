@@ -9,7 +9,7 @@
 ;; *robot* -> ロボットモデルのオブジェクト。実際に動くロボットではなく、複製したマネキンみたいなイメージ？
 ;; *ri* -> Robot Interface の略。実際のロボットに司令を送ったり状態を受け取ったりする。
 (send *robot* :reset-manip-pose) ;; *robot*の各関節角度を、reset-manip-poseの状態に変更。
-(send *ri* :angle-vector (send *robot* :angle-vector) 3000) ;; 実ロボットに、*robot*の関節角度を送る。最後の引数は遷移時間。
+(send *ri* :angle-vector (send *robot* :angle-vector) 2000) ;; 実ロボットに、*robot*の関節角度を送る。最後の引数は遷移時間。
 (send *ri* :wait-interpolation) ;; ロボットが動き終わるまで待つ。（これを入れないと、ロボットが動いている途中で次の処理に移ってしまう。）
 
 (print (send *robot* :rarm :shoulder-p :joint-angle)) ;;右手の肩ピッチ関節の角度を表示
@@ -27,8 +27,11 @@
 (read-line) ;;キーボード入力が来るまで待つ
 (send *robot* :rarm :inverse-kinematics (make-coords :pos #f(300 -400 1130) :rpy (float-vector 0 0 (deg2rad 90)))) ;;(make-coords)で生成した位置姿勢に右手が来るように、逆運動学を解いて関節角度を求める。
 (send *robot* :larm :inverse-kinematics (make-coords :pos #f(300 400 1130) :rpy (float-vector 0 0 (deg2rad -90)))) ;;左手も同様。
-(send *ri* :angle-vector (send *robot* :angle-vector) 7000) ;;実ロボットに司令を出す。
+(send *ri* :angle-vector (send *robot* :angle-vector) 2000) ;;実ロボットに司令を出す。
 (send *ri* :wait-interpolation)
+
+(print "p1 press any button ") ;;ただのプリント文                                                                                                           
+(read-line) ;;キーボード入力が来るまで待つ
 
 (send *robot* :arms :move-end-pos #f(300 0 0)) ;;現在の位置から手先の移動量を指定する方法。デフォルトでは手先座標系。
 (send *ri* :angle-vector (send *robot* :angle-vector) 5000)
@@ -39,13 +42,20 @@
 (send *ri* :start-impedance :arms :K-r 200.0 :D-r 300.0  :M-r 1
                                   :K-p 500.0 :D-p 1000.0 :M-p 5) ;;インピーダンス制御の設定。K(バネ)D(ダンパ)M(慣性)、　r(回転)、p(並進)
 
+(print "p2 press any button ") ;;ただのプリント文                                                                                                           
+(read-line) ;;キーボード入力が来るまで待つ
+
 ;;箱を持つ
 (send *robot* :arms :move-end-pos #f(0 0 -170))
-(send *ri* :angle-vector (send *robot* :angle-vector) 3000)
+(send *ri* :angle-vector (send *robot* :angle-vector) 2000)
 (send *ri* :wait-interpolation)
 ;(send *robot* :arms :move-end-pos #f(0 0 160))
 ;(send *ri* :angle-vector (send *robot* :angle-vector) 3000)
 ;(send *ri* :wait-interpolation)
+
+(print "p3 press any button ") ;;ただのプリント文                                                                                                           
+(read-line) ;;キーボード入力が来るまで待つ
+
 
 ;;かかる参照力の設定
 ;;インピーダンス制御を入れている場合、設定した反力を受けるまで力をかけるようになる。
@@ -60,6 +70,9 @@
        3000)
 (unix:sleep 5) ;;指定した時間(秒)処理を止める
 
+(print "p4 press any button ") ;;ただのプリント文                                                                                                           
+(read-line) ;;キーボード入力が来るまで待つ
+
 ;;上に持ち上げる力をかける
 (send *ri* :set-ref-forces
       (list
@@ -71,7 +84,40 @@
        5000)
 (unix:sleep 5)
 
+(print "p5 press any button ") ;;ただのプリント文                                                                                                           
+(read-line) ;;キーボード入力が来るまで待つ
+
+
 ;;箱を持ち上げる
 (send *robot* :arms :move-end-pos #f(0 0 200) :world) ;;worldをつけることで世界座標系で手先の移動量を指定
-(send *ri* :angle-vector (send *robot* :angle-vector) 5000)
+(send *ri* :angle-vector (send *robot* :angle-vector) 2000)
 (send *ri* :wait-interpolation)
+
+(send *ri* :go-pos -0.5 0 0)
+;(send *ri* :go-pos 0.5 0 0)
+
+(send *ri* :set-gait-generator-param
+           :modify-footsteps nil)       ;;着地位置補正を行うと、着地位置がずれてしまうので、環境認識を行わない場合は切る
+(send *ri* :go-pos 0 0 -90)
+(send *ri* :go-pos 1.2 0 0)
+(send *ri* :set-gait-generator-param
+           :modify-footsteps t)
+
+
+;;箱を置く
+(print "p6 press any button ") ;;ただのプリント文                                                                                                           
+(read-line) ;;キーボード入力が来るまで待つ
+
+(send *robot* :arms :move-end-pos #f(0 0 -170) :world) ;;worldをつけることで世界座標系で手先の移動量を指定
+(send *ri* :angle-vector (send *robot* :angle-vector) 1000)
+(send *ri* :wait-interpolation)
+
+(send *robot* :arms :move-end-pos #f(0 0 300)) ;;現在の位置から手先の移動量を指定する方法。デフォルトでは手先座標系。
+(send *ri* :angle-vector (send *robot* :angle-vector) 1000)
+(send *ri* :wait-interpolation)
+
+(send *ri* :go-pos -0.5 0 0)
+
+(send *robot* :reset-manip-pose) ;; *robot*の各関節角度を、reset-manip-poseの状態に変更。
+(send *ri* :angle-vector (send *robot* :angle-vector) 1000) ;; 実ロボットに、*robot*の関節角度を送る。最後の引数は遷移時間。
+(send *ri* :wait-interpolation) ;; ロボットが動き終わるまで待つ。（これを入れないと、ロボットが動いている途中で次の処理に移ってしまう。）
