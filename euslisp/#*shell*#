@@ -1,0 +1,740 @@
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ kojio_tutorial-source
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x56462eebb690[16374] --> 0x56462f341910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x56462f341910[32738] --> 0x564630572d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653900705.988559588, 269.684000000]: [/default_robot_interface_1653900705481972380] waiting /clock... 0.00096 seconds elapsed.
+[ INFO] [1653900705.989348571, 269.684000000]: [/default_robot_interface_1653900705481972380] /clock is now published.
+[ WARN] [1653900706.000424319, 269.696000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653900706.374134951, 270.068000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900706.682024344, 270.372000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900706.987864632, 270.682000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900707.296291955, 270.989000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900707.603121907, 271.298000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900707.910173578, 271.603000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653900708.228949997, 271.922000000]: ROSEUS is already installed as /default_robot_interface_1653900705481972380
+;; #<rotational-joint #X56462f4dd0b8 CHEST_JOINT1> :joint-angle(-0.014128) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X56463c068fe8>
+2.irteusgl$ exit
+[ INFO] [1653900933.380906530, 325.740000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653900933.380940382, 325.740000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x5605e9dcb690[16374] --> 0x5605ea251910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x5605ea251910[32738] --> 0x5605eb482d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653900952.649034730, 26.960000000]: [/default_robot_interface_1653900952142584043] waiting /clock... 0.000848 seconds elapsed.
+[ INFO] [1653900952.649907264, 26.962000000]: [/default_robot_interface_1653900952142584043] /clock is now published.
+[ WARN] [1653900952.660487360, 26.973000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653900952.933341470, 27.246000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900953.243013209, 27.552000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900953.551466627, 27.862000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900953.858953174, 28.169000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900954.165393362, 28.478000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653900954.474822604, 28.784000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653900954.795385380, 29.104000000]: ROSEUS is already installed as /default_robot_interface_1653900952142584043
+;; #<rotational-joint #X5605ea3ed0b8 CHEST_JOINT1> :joint-angle(-0.014145) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X5605f67c2c18>
+2.irteusgl$ exit
+[ INFO] [1653901056.486326425, 101.220000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653901056.486352932, 101.220000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55e9aae20690[16374] --> 0x55e9ab2a6910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55e9ab2a6910[32738] --> 0x55e9ac4d7d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653901118.555018825, 49.464000000]: [/default_robot_interface_1653901118048770078] waiting /clock... 0.000882 seconds elapsed.
+[ INFO] [1653901118.555877122, 49.464000000]: [/default_robot_interface_1653901118048770078] /clock is now published.
+[ WARN] [1653901118.566194461, 49.474000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653901118.941614356, 49.844000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901119.250982970, 50.155000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901119.556570080, 50.462000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901119.862803886, 50.768000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901120.169621384, 51.074000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901120.475307080, 51.377000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653901120.807776803, 51.694000000]: ROSEUS is already installed as /default_robot_interface_1653901118048770078
+;; #<rotational-joint #X55e9ab4420b8 CHEST_JOINT1> :joint-angle(-0.014122) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55e9ba60bfb0>
+2.irteusgl$ exit
+[ INFO] [1653901248.633913310, 141.848000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653901248.633940753, 141.848000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55c51b62f690[16374] --> 0x55c51bab5910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55c51bab5910[32738] --> 0x55c51cce6d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653901304.399272832, 21.386000000]: [/default_robot_interface_1653901303893305710] waiting /clock... 0.00082 seconds elapsed.
+[ INFO] [1653901304.400326477, 21.386000000]: [/default_robot_interface_1653901303893305710] /clock is now published.
+[ WARN] [1653901304.412945207, 21.396000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653901304.782354742, 21.766000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901305.088718809, 22.073000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901305.395164385, 22.380000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901305.701433330, 22.686000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901306.010296532, 22.994000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901306.318993105, 23.303000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653901306.640427376, 23.621000000]: ROSEUS is already installed as /default_robot_interface_1653901303893305710
+;; #<rotational-joint #X55c51bc510b8 CHEST_JOINT1> :joint-angle(-0.014104) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55c529a58598>
+2.irteusgl$ exit
+[ INFO] [1653901472.429196976, 93.856000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653901472.429225568, 93.856000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x5652ec72e690[16374] --> 0x5652ecbb4910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x5652ecbb4910[32738] --> 0x5652edde5d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653901540.986268445, 52.966000000]: [/default_robot_interface_1653901540479911292] waiting /clock... 0.000984 seconds elapsed.
+[ INFO] [1653901540.987248215, 52.966000000]: [/default_robot_interface_1653901540479911292] /clock is now published.
+[ WARN] [1653901540.998126670, 52.978000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653901541.374116928, 53.353000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901541.682156139, 53.659000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901541.990635544, 53.968000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901542.298274514, 54.277000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901542.606949989, 54.586000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901542.916558642, 54.890000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653901543.235711098, 55.214000000]: ROSEUS is already installed as /default_robot_interface_1653901540479911292
+;; #<rotational-joint #X5652ecd500b8 CHEST_JOINT1> :joint-angle(-0.014125) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X5652f90afa98>
+2.irteusgl$ exit
+[ INFO] [1653901742.517211438, 246.860000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653901742.517302162, 246.860000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55bf9e76a690[16374] --> 0x55bf9ebf0910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55bf9ebf0910[32738] --> 0x55bf9fe21d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653901809.498018319, 30.014000000]: [/default_robot_interface_1653901808991769386] waiting /clock... 0.000936 seconds elapsed.
+[ INFO] [1653901809.499044443, 30.016000000]: [/default_robot_interface_1653901808991769386] /clock is now published.
+[ WARN] [1653901809.511425869, 30.028000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653901809.886045519, 30.400000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901810.192140769, 30.707000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901810.499533929, 31.014000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901810.805352073, 31.317000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901811.110556246, 31.624000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901811.419787579, 31.932000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653901811.743181821, 32.253000000]: ROSEUS is already installed as /default_robot_interface_1653901808991769386
+;; #<rotational-joint #X55bf9ed8c0b8 CHEST_JOINT1> :joint-angle(-0.014141) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55bfac4f5d30>
+2.irteusgl$ exit
+[ INFO] [1653901938.268519917, 131.674000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653901938.268614728, 131.674000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x5580c96f4690[16374] --> 0x5580c9b7a910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x5580c9b7a910[32738] --> 0x5580cadabd30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ERROR] [1653901948.246176689]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...
+[ INFO] [1653901950.811435206]: Connected to master at [localhost:11311]
+[ WARN] [1653901950.823868274]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653901951.981867565]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901956.588991197]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901956.796236634]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901957.103789855]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901957.411744781]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653901957.718670230]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653901958.039204399]: ROSEUS is already installed as /default_robot_interface_1653901948245431068
+;; #<rotational-joint #X5580c9d160b8 CHEST_JOINT1> :joint-angle(-0.015529) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X5580d7a15808>
+2.irteusgl$ (stair-to-stair-toe)
+;; #<rotational-joint #X5580c9d160b8 CHEST_JOINT1> :joint-angle(-0.014077) violate min-angle(0.0)
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X5580e488e670>
+3.irteusgl$ exit
+[ INFO] [1653902113.930220618]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653902113.930253144]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x562c6138f690[16374] --> 0x562c61815910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x562c61815910[32738] --> 0x562c62a46d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653902159.307598459, 27.833000000]: [/default_robot_interface_1653902158801416398] waiting /clock... 0.00088 seconds elapsed.
+[ INFO] [1653902159.308480186, 27.835000000]: [/default_robot_interface_1653902158801416398] /clock is now published.
+[ WARN] [1653902159.318737777, 27.845000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653902159.695280431, 28.215000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902160.000529738, 28.525000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902160.308948552, 28.836000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902160.616930572, 29.140000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902160.926770060, 29.447000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902161.234792878, 29.758000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653902161.553447123, 30.076000000]: ROSEUS is already installed as /default_robot_interface_1653902158801416398
+;; #<rotational-joint #X562c619b10b8 CHEST_JOINT1> :joint-angle(-0.014138) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X562c82bafb20>
+2.irteusgl$ exit
+[ INFO] [1653902246.307993377, 85.788000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653902246.308090378, 85.788000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55fec7642690[16374] --> 0x55fec7ac8910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55fec7ac8910[32738] --> 0x55fec8cf9d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653902277.927675678, 24.082000000]: [/default_robot_interface_1653902277420833008] waiting /clock... 0.000906 seconds elapsed.
+[ INFO] [1653902277.928507919, 24.082000000]: [/default_robot_interface_1653902277420833008] /clock is now published.
+[ WARN] [1653902277.939195497, 24.092000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653902278.211147939, 24.362000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902278.518219994, 24.673000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902278.826826309, 24.980000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902279.132615501, 25.287000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902279.441962549, 25.594000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902279.750315474, 25.904000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653902280.070629798, 26.222000000]: ROSEUS is already installed as /default_robot_interface_1653902277420833008
+;; #<rotational-joint #X55fec7c640b8 CHEST_JOINT1> :joint-angle(-0.014124) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55fee8e65538>
+2.irteusgl$ exit
+[ INFO] [1653902354.421573592, 100.512000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653902354.421618700, 100.512000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55adea2b1690[16374] --> 0x55adea737910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55adea737910[32738] --> 0x55adeb968d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653902471.965776622, 16.259000000]: [/default_robot_interface_1653902471459968494] waiting /clock... 0.000772 seconds elapsed.
+[ INFO] [1653902471.966792848, 16.259000000]: [/default_robot_interface_1653902471459968494] /clock is now published.
+[ WARN] [1653902471.978153339, 16.272000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653902472.355266426, 16.648000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902472.661408750, 16.954000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902472.967938137, 17.259000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902473.274599784, 17.566000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902473.582096460, 17.874000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902473.887974655, 18.181000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653902474.210655916, 18.498000000]: ROSEUS is already installed as /default_robot_interface_1653902471459968494
+;; #<rotational-joint #X55adea8d30b8 CHEST_JOINT1> :joint-angle(-0.01404) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55adf7fe8d90>
+2.irteusgl$ roseus terrain_walking_20deg.l
+nil
+3.ROSEUS:irteusgl$ exit
+[ INFO] [1653902597.275759374, 121.776000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653902597.275803578, 121.776000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55629867a690[16374] --> 0x556298b00910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x556298b00910[32738] --> 0x556299d31d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653902610.245205315, 25.248000000]: [/default_robot_interface_1653902609738705949] waiting /clock... 0.000906 seconds elapsed.
+[ INFO] [1653902610.246109072, 25.248000000]: [/default_robot_interface_1653902609738705949] /clock is now published.
+[ WARN] [1653902610.256350701, 25.260000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653902610.626358662, 25.630000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902610.933141810, 25.936000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902611.239715656, 26.241000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902611.548634516, 26.550000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902611.855330212, 26.858000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902612.162183857, 27.164000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653902612.484212144, 27.482000000]: ROSEUS is already installed as /default_robot_interface_1653902609738705949
+;; #<rotational-joint #X556298c9c0b8 CHEST_JOINT1> :joint-angle(-0.014078) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X5562bb942010>
+2.irteusgl$ exit
+[ INFO] [1653902810.824065577, 97.766000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653902810.824109372, 97.766000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x563b157c5690[16374] --> 0x563b15c4b910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x563b15c4b910[32738] --> 0x563b16e7cd30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653902829.022165497, 42.803000000]: [/default_robot_interface_1653902828516092121] waiting /clock... 0.001011 seconds elapsed.
+[ INFO] [1653902829.023215766, 42.806000000]: [/default_robot_interface_1653902828516092121] /clock is now published.
+[ WARN] [1653902829.034043550, 42.818000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653902829.407565565, 43.192000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902829.717569715, 43.500000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902830.024369445, 43.804000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902830.331433445, 44.114000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902830.639046045, 44.421000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653902830.945376041, 44.726000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653902831.363564595, 45.146000000]: ROSEUS is already installed as /default_robot_interface_1653902828516092121
+;; #<rotational-joint #X563b15de70b8 CHEST_JOINT1> :joint-angle(-0.014144) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X563b35bd8c80>
+2.irteusgl$ exit
+[ INFO] [1653903179.417935591, 392.835000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653903179.417965852, 392.835000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ act
+
+Command 'act' not found, but can be installed with:
+
+sudo snap install act      # version 0.3.2, or
+sudo apt  install artemis
+
+See 'snap info act' for additional versions.
+
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x563c1d947690[16374] --> 0x563c1ddcd910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x563c1ddcd910[32738] --> 0x563c1effed30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653903214.548659495, 21.734000000]: [/default_robot_interface_1653903214042050646] waiting /clock... 0.000952 seconds elapsed.
+[ INFO] [1653903214.549575653, 21.734000000]: [/default_robot_interface_1653903214042050646] /clock is now published.
+[ WARN] [1653903214.560169684, 21.742000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653903214.930374408, 22.113000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903215.238693343, 22.418000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903215.546160883, 22.728000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903215.853320656, 23.035000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903216.159645351, 23.342000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903216.465626077, 23.648000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653903216.786319268, 23.966000000]: ROSEUS is already installed as /default_robot_interface_1653903214042050646
+;; #<rotational-joint #X563c1df690b8 CHEST_JOINT1> :joint-angle(-0.014073) violate min-angle(0.0)
+1.irteusgl$ act
+[ERROR] [1653903284.269766530, 91.157000000]: attempted to call service  /AutoBalancerServiceROSBridge/waitFootSteps, but failed 
+[ERROR] [1653903284.280105993, 91.157000000]: attempted to call service  /AutoBalancerServiceROSBridge/getAutoBalancerParam, but failed 
+[ERROR] [1653903284.290050127, 91.157000000]: attempted to call service  /AutoBalancerServiceROSBridge/getAutoBalancerParam, but failed 
+[ERROR] [1653903284.391327198, 91.157000000]: attempted to call service  /AutoBalancerServiceROSBridge/setAutoBalancerParam, but failed 
+[ERROR] [1653903284.392180475, 91.157000000]: Failed to establish connection to service server
+[ERROR] [1653903284.392199972, 91.157000000]: attempted to call service  /AutoBalancerServiceROSBridge/setFootSteps, but failed 
+[ERROR] [1653903284.392635082, 91.157000000]: Failed to establish connection to service server
+[ERROR] [1653903284.392650466, 91.157000000]: attempted to call service  /AutoBalancerServiceROSBridge/waitFootSteps, but failed 
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X563c3bdeec68>
+2.irteusgl$ exit
+[ INFO] [1653903315.167510620, 91.157000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653903315.167601335, 91.157000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55656e95e690[16374] --> 0x55656ede4910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55656ede4910[32738] --> 0x556570015d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653903330.438405754, 9.076000000]: [/default_robot_interface_1653903329931358855] waiting /clock... 0.001383 seconds elapsed.
+[ INFO] [1653903330.439284564, 9.076000000]: [/default_robot_interface_1653903329931358855] /clock is now published.
+[ WARN] [1653903330.449867730, 9.085000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653903330.827786478, 9.459000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903331.132212734, 9.767000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903331.438340137, 10.074000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903331.744596552, 10.378000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903332.052012316, 10.684000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903332.359606328, 10.996000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653903332.583423618, 11.217000000]: ROSEUS is already installed as /default_robot_interface_1653903329931358855
+;; #<rotational-joint #X55656ef800b8 CHEST_JOINT1> :joint-angle(-0.014155) violate min-angle(0.0)
+1.irteusgl$ act
+;; #<rotational-joint #X55657033e250 RLEG_JOINT1> :joint-angle(31.1863) violate max-angle(30.0)
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55658f204e68>
+2.irteusgl$ exit
+[ INFO] [1653903626.875605214, 167.138000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653903626.875641564, 167.138000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55f0d5e7c690[16374] --> 0x55f0d6302910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55f0d6302910[32738] --> 0x55f0d7533d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653903660.625377825, 21.366000000]: [/default_robot_interface_1653903660118638189] waiting /clock... 0.001325 seconds elapsed.
+[ INFO] [1653903660.626163275, 21.366000000]: [/default_robot_interface_1653903660118638189] /clock is now published.
+[ WARN] [1653903660.636509480, 21.376000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653903661.006387268, 21.746000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903661.312056657, 22.052000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903661.619553589, 22.361000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903661.926969739, 22.668000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903662.235878021, 22.977000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903662.444268684, 23.184000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653903662.862947369, 23.604000000]: ROSEUS is already installed as /default_robot_interface_1653903660118638189
+;; #<rotational-joint #X55f0d649e0b8 CHEST_JOINT1> :joint-angle(-0.0141) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55f0f7385260>
+2.irteusgl$ exit
+[ INFO] [1653903844.376769131, 187.710000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653903844.376811612, 187.710000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x5606a1f39690[16374] --> 0x5606a23bf910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x5606a23bf910[32738] --> 0x5606a35f0d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653903857.323255865, 16.376000000]: [/default_robot_interface_1653903856817514859] waiting /clock... 0.000788 seconds elapsed.
+[ INFO] [1653903857.324019876, 16.376000000]: [/default_robot_interface_1653903856817514859] /clock is now published.
+[ WARN] [1653903857.334816491, 16.382000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653903857.708199439, 16.758000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903858.014935250, 17.064000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903858.321418071, 17.370000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903858.627494552, 17.676000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903858.934627714, 17.982000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653903859.245433871, 18.294000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653903859.565230685, 18.613000000]: ROSEUS is already installed as /default_robot_interface_1653903856817514859
+;; #<rotational-joint #X5606a255b0b8 CHEST_JOINT1> :joint-angle(-0.014048) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X5606b07d0438>
+2.irteusgl$ exit
+[ INFO] [1653903974.902981888, 133.851000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653903974.903026031, 133.851000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ act
+
+Command 'act' not found, but can be installed with:
+
+sudo snap install act      # version 0.3.2, or
+sudo apt  install artemis
+
+See 'snap info act' for additional versions.
+
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55f88bee9690[16374] --> 0x55f88c36f910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55f88c36f910[32738] --> 0x55f88d5a0d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653904010.991897013, 22.270000000]: [/default_robot_interface_1653904010485572163] waiting /clock... 0.00093 seconds elapsed.
+[ INFO] [1653904010.992871664, 22.270000000]: [/default_robot_interface_1653904010485572163] /clock is now published.
+[ WARN] [1653904011.003033492, 22.281000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653904011.280043247, 22.553000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904011.585205897, 22.862000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904011.894265910, 23.170000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904012.199239943, 23.476000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904012.505117260, 23.782000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904012.812359463, 24.087000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653904013.133796565, 24.412000000]: ROSEUS is already installed as /default_robot_interface_1653904010485572163
+;; #<rotational-joint #X55f88c50b0b8 CHEST_JOINT1> :joint-angle(-0.01414) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55f8959124c0>
+2.irteusgl$ exit
+[ INFO] [1653904132.782761523, 143.817000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653904132.782797758, 143.817000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x559d7c8f5690[16374] --> 0x559d7cd7b910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x559d7cd7b910[32738] --> 0x559d7dfacd30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653904162.641709836, 15.560000000]: [/default_robot_interface_1653904162135228000] waiting /clock... 0.001024 seconds elapsed.
+[ INFO] [1653904162.642775027, 15.560000000]: [/default_robot_interface_1653904162135228000] /clock is now published.
+[ WARN] [1653904162.653983270, 15.574000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653904163.026610246, 15.948000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904163.337059252, 16.256000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904163.645454305, 16.561000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904163.950968109, 16.870000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904164.258369279, 17.178000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904164.465290940, 17.386000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653904164.887110954, 17.807000000]: ROSEUS is already installed as /default_robot_interface_1653904162135228000
+;; #<rotational-joint #X559d7cf170b8 CHEST_JOINT1> :joint-angle(-0.014056) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X559d8b4556f8>
+2.irteusgl$ exit
+[ INFO] [1653904239.496997546, 92.322000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653904239.497029329, 92.322000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x557751f0c690[16374] --> 0x557752392910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x557752392910[32738] --> 0x5577535c3d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653904316.869431800, 19.703000000]: [/default_robot_interface_1653904316363598365] waiting /clock... 0.000789 seconds elapsed.
+[ INFO] [1653904316.870355409, 19.705000000]: [/default_robot_interface_1653904316363598365] /clock is now published.
+[ WARN] [1653904316.881064702, 19.712000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653904317.251606316, 20.084000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904317.558797711, 20.392000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904317.866436849, 20.701000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904318.173981629, 21.006000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904318.481217642, 21.314000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904318.690548587, 21.524000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653904319.114456678, 21.944000000]: ROSEUS is already installed as /default_robot_interface_1653904316363598365
+;; #<rotational-joint #X55775252e0b8 CHEST_JOINT1> :joint-angle(-0.014103) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X557770053510>
+2.irteusgl$
+nil
+2.irteusgl$ exit
+[ INFO] [1653904570.340632179, 188.544000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653904570.340664542, 188.544000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55e6fb030690[16374] --> 0x55e6fb4b6910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55e6fb4b6910[32738] --> 0x55e6fc6e7d30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653904583.746602140, 87.514000000]: [/default_robot_interface_1653904583239958499] waiting /clock... 0.00094 seconds elapsed.
+[ INFO] [1653904583.747353396, 87.514000000]: [/default_robot_interface_1653904583239958499] /clock is now published.
+[ WARN] [1653904583.757747526, 87.524000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653904584.130642610, 87.898000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904584.438444111, 88.204000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904584.746145638, 88.508000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904585.053841663, 88.821000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904585.364598547, 89.130000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904585.672210670, 89.436000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653904585.993161525, 89.759000000]: ROSEUS is already installed as /default_robot_interface_1653904583239958499
+;; #<rotational-joint #X55e6fb6520b8 CHEST_JOINT1> :joint-angle(-0.014125) violate min-angle(0.0)
+1.irteusgl$ roseus terrain_walking_20deg.l
+nil
+2.ROSEUS:irteusgl$ act
+sh: 1: act: not found
+32512
+3.ROSEUS:irteusgl$ exit
+[ INFO] [1653904622.267443226, 126.001000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653904622.267486084, 126.001000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x5625a9108690[16374] --> 0x5625a958e910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x5625a958e910[32738] --> 0x5625aa7bfd30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653904633.254970823, 136.980000000]: [/default_robot_interface_1653904632747703166] waiting /clock... 0.001122 seconds elapsed.
+[ INFO] [1653904633.256060625, 136.982000000]: [/default_robot_interface_1653904632747703166] /clock is now published.
+[ WARN] [1653904633.267588562, 136.992000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653904633.639553771, 137.363000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904633.946599109, 137.670000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904634.256885702, 137.980000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904634.463411599, 138.186000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904634.793749946, 138.496000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904635.091040866, 138.803000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653904635.411245455, 139.124000000]: ROSEUS is already installed as /default_robot_interface_1653904632747703166
+;; #<rotational-joint #X5625a972a0b8 CHEST_JOINT1> :joint-angle(-0.014154) violate min-angle(0.0)
+1.irteusgl$ roseus terrain_walking_20deg.l
+nil
+2.ROSEUS:irteusgl$ exit
+[ INFO] [1653904653.048138464, 156.749000000]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1653904653.048180661, 156.749000000]: exiting roseus 0
+konishi@konishi-ThinkPad-T15g-Gen-1:~/catkin_ws/kojio_tutorial/src/box_tutorial/euslisp (konishi)[kojio_tutorial]$ roseus terrain_walking_20deg.l
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:1
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph gnuplotlib ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55b5a5c34690[16374] --> 0x55b5a60ba910[32748] top=3d4b
+irtgl irtglc irtviewer 
+EusLisp 9.29( 1.2.5) for Linux64 created on ip-10-0-1-68(Tue Mar 1 05:47:01 PST 2022)
+roseus ;; loading roseus("1.7.5-11-gef65716") on euslisp((9.29 ip-10-0-1-68 Tue Mar 1 05:47:01 PST 2022  1.2.5))
+eustf roseus_c_util 
+;; extending gcstack 0x55b5a60ba910[32738] --> 0x55b5a72ebd30[65476] top=7f13
+[rospack] Error: package 'thk_hand_controller' not found
+;; could not find pacakge [thk_hand_controller]
+[ WARN] [1653904665.128407463, 168.820000000]: [/default_robot_interface_1653904664622425933] waiting /clock... 0.000911 seconds elapsed.
+[ INFO] [1653904665.129266249, 168.820000000]: [/default_robot_interface_1653904664622425933] /clock is now published.
+[ WARN] [1653904665.139872839, 168.831000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add controllers"
+[ WARN] [1653904665.514337069, 169.203000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904665.820180526, 169.510000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904666.128375809, 169.818000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904666.434638260, 170.124000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904666.740468925, 170.430000000]: Waiting for actionlib interface forever because controller-timeout is nil
+[ WARN] [1653904667.047498350, 170.736000000]: Waiting for actionlib interface forever because controller-timeout is nil
+";; Add hands"
+[ WARN] [1653904667.368190801, 171.058000000]: ROSEUS is already installed as /default_robot_interface_1653904664622425933
+;; #<rotational-joint #X55b5a62560b8 CHEST_JOINT1> :joint-angle(-0.014154) violate min-angle(0.0)
+1.irteusgl$ act
+#<hrpsys_ros_bridge::openhrp_autobalancerservice_waitfootstepsresponse #X55b5b464ebe8>
+2.irteusgl$ 
