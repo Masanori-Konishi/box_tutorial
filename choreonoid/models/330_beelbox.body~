@@ -1,0 +1,107 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+
+name: 330_table
+rootLink: body
+links:
+  -
+    name: body
+    jointType: fixed
+    mass: 12.8
+    inertia: [
+      0.72533, 0,       0,
+      0,       0.08533, 0,
+      0,       0,       0.72533 ]
+    elements:
+      -
+        type: Transform
+        translation: [ 0.0, 0.0, 0.69 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.7, 0.5, 0.02]
+            appearance: &wood
+              material:
+                diffuseColor: [ 0.8, 0.6, 0.5 ]
+      -
+        type: Transform
+        translation: [ 0.315, 0.0, 0.68 ]
+        elements: &table_leg
+          Shape:
+            geometry:
+              type: Extrusion
+              crossSection: [
+	             -0.015,  0.0,
+                  0.015,  0.0,
+                  0.015, -0.25,
+                  0.24 , -0.52,
+                  0.24 , -0.65,
+                  0.21 , -0.65,
+                  0.21 , -0.54,
+                 -0.015, -0.27
+              ]
+              spine: [ 0.015, 0.0, 0.0, -0.015, 0.0, 0.0 ]
+            appearance: &metal
+              material:
+                diffuseColor: [ 0.5, 0.5, 0.5 ]
+      -
+        type: Transform
+        translation: [ -0.315, 0.0, 0.68 ]
+        elements: *table_leg
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 180.0]
+        translation: [ -0.265, 0.0, 0.68 ]
+        elements: *table_leg
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 180.0]
+        translation: [ 0.265, 0.0, 0.68 ]
+        elements: *table_leg
+      -
+        type: Transform
+        translation: [ 0.0, 0.0, 0.635 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.68, 0.04, 0.09]
+            appearance: *metal
+      -
+        type: Transform
+        translation: [ 0.0, 0.155, 0.635 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.46, 0.01, 0.09]
+            appearance: *metal
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 90.0]
+        translation: [ 0.315, 0.215, 0.03 ]
+        elements: &table_wheel
+          Shape:
+            geometry:
+              type: Cylinder
+              radius: 0.03
+              height: 0.04
+            appearance: &black
+              material:
+                diffuseColor: [ 0.1, 0.1, 0.1 ]
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 90.0]
+        translation: [ -0.315, 0.215, 0.03 ]
+        elements: *table_wheel
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 90.0]
+        translation: [ -0.265, -0.245, 0.03 ]
+        elements: *table_wheel
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 90.0]
+        translation: [ 0.265, -0.245, 0.03 ]
+        elements: *table_wheel

@@ -1,0 +1,149 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+
+name: 330_beelbox
+rootLink: body
+links:
+  -
+    name: body
+    jointType: free
+    mass: 1.0
+    inertia: [
+      0.072533, 0,       0,
+      0,       0.008533, 0,
+      0,       0,       0.072533 ]
+    elements:
+      -
+        type: Transform
+        translation: [ 0.0, 0.0, 0.002 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.45, 0.37, 0.004]
+            appearance: &yellow
+              material:
+                diffuseColor: [ 0.9, 0.9, 0.0 ]
+      -
+        type: Transform
+        translation: [ 0.217, 0.0, 0.09 ]
+        elements: &side_panel
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.016, 0.24, 0.18]
+            appearance: *yellow
+      -
+        type: Transform
+        translation: [ -0.217, 0.0, 0.09 ]
+        elements: *side_panel
+      -
+        type: Transform
+        translation: [ 0.0, 0.177, 0.09 ]
+        elements: &front_panel
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.32, 0.016, 0.18]
+            appearance: *yellow
+      -
+        type: Transform
+        translation: [ 0.0, -0.177, 0.09 ]
+        elements: *front_panel
+      -
+        type: Transform
+        translation: [ 0.217, 0.0, 0.294 ]
+        elements: &side_panel_up
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.016, 0.24, 0.04]
+            appearance: *yellow
+      -
+        type: Transform
+        translation: [ -0.217, 0.0, 0.294 ]
+        elements: *side_panel_up
+      -
+        type: Transform
+        translation: [ 0.0, 0.177, 0.294 ]
+        elements: &front_panel_up
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.32, 0.016, 0.04]
+            appearance: *yellow
+      -
+        type: Transform
+        translation: [ 0.0, -0.177, 0.294 ]
+        elements: *front_panel_up
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 0.0]
+        translation: [ -0.16, -0.12, 0.0 ]
+        elements: &corner
+          Shape:
+            geometry:
+              type: Extrusion
+              crossSection: [
+	              -0.065  ,  0.0,
+                  -0.049,  0.0,
+                  0.0,  0.049,
+                  0.0,  0.065,
+                  -0.065  ,  0.0
+              ]
+              spine: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.314 ]
+            appearance: *yellow
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 90.0]
+        translation: [ 0.16, -0.12, 0.0 ]
+        elements: *corner
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 180.0]
+        translation: [ 0.16, 0.12, 0.0 ]
+        elements: *corner
+      -
+        type: Transform
+        rotation: [0.0, 0.0, 1.0, 270.0]
+        translation: [ -0.16, 0.12, 0.0 ]
+        elements: *corner
+      -
+        type: Transform
+        translation: [ 0.0415, 0.0, 0.072 ]
+        elements: &panel_tate
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.002, 0.37, 0.144]
+            appearance: *yellow
+      -
+        type: Transform
+        translation: [ 0.1245, 0.0, 0.072 ]
+        elements: *panel_tate
+      -
+        type: Transform
+        translation: [ -0.0415, 0.0, 0.072 ]
+        elements: *panel_tate
+      -
+        type: Transform
+        translation: [ -0.1245, 0.0, 0.072 ]
+        elements: *panel_tate
+      -
+        type: Transform
+        translation: [ 0.0, 0.0, 0.072 ]
+        elements: &panel_yoko
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.45, 0.002, 0.144]
+            appearance: *yellow
+      -
+        type: Transform
+        translation: [ 0.0, 0.083, 0.072 ]
+        elements: *panel_yoko
+      -
+        type: Transform
+        translation: [ 0.0, -0.083, 0.072 ]
+        elements: *panel_yoko
+

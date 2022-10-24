@@ -1,0 +1,62 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+
+name: stair
+rootLink: body
+links:
+  -
+    name: body
+    jointType: fixed
+    mass: 100  
+    inertia: [
+      100,     0,       0,
+      0,       100    , 0,
+      0,       0,       100    ]
+    elements:
+      -
+        type: Transform
+        translation: [ -0.225, 0.0, 0.1 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.45, 2.0, 0.2]
+            appearance: &BodyAppearance
+              material:
+                diffuseColor: [ 0.4, 0.3, 0.1 ]
+      -
+        type: Transform
+        translation: [ 0.225, 0.0, 0.3 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.45, 2.0, 0.2]
+            appearance: *BodyAppearance
+      -
+        type: Transform
+        translation: [ 0.6, 0.0, 0.5 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.3, 2.0, 0.2]
+            appearance: *BodyAppearance
+      -
+        type: Transform
+        translation: [ 0.9, 0.0, 0.7 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.3, 2.0, 0.2]
+            appearance: *BodyAppearance
+      -
+        type: Transform
+        translation: [ 1.45, 0.0, 0.9 ]
+        elements:
+          Shape:
+            geometry:
+              type: Box
+              size: [ 0.8, 2.0, 0.2]
+            appearance: *BodyAppearance

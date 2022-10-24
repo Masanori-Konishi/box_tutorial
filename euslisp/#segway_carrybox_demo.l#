@@ -50,7 +50,6 @@
   (lower-waist-no-reset)
   (send *ri* :go-pos 0.3 0 0)
   (ride-segwaymodel)
-  (set-inp-param)
   (hold-ready-no-reset)
   (mslhand-ready)
   )

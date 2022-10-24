@@ -16,102 +16,12 @@ items:
       children: 
         - 
           id: 2
-          name: "JAXON_RED"
+          name: "VISIBLE_FLOOR"
           plugin: Body
           class: BodyItem
           data: 
-            modelFile: "@jvrc_models_DIR@/JAXON_JVRC/JAXON_JVRCmain_hrpsys_bush.wrl"
-            currentBaseLink: "WAIST"
-            rootPosition: [ 0, 0, 1.1185 ]
-            rootAttitude: [ 
-              2.22044605e-16, -1, 0, 
-              1, 2.22044605e-16, 0, 
-              0, 0, 1 ]
-            jointPositions: [ 
-               0.000054, -0.003093, -0.262419,  0.681091, -0.418672,  0.003093,  0.000054, -0.003093, -0.262401,  0.681084, 
-              -0.418684,  0.003093,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.523599, -0.349066, 
-              -0.087266, -1.396263,  0.000000,  0.000000, -0.349066,  0.000000,  0.523599,  0.349066,  0.087266, -1.396263, 
-               0.000000,  0.000000, -0.349066,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
-               0.000000,  0.000000,  0.000000,  0.000000 ]
-            initialRootPosition: [ 0, 0, 1.1185 ]
-            initialRootAttitude: [ 
-              2.22044605e-16, -1, 0, 
-              1, 2.22044605e-16, 0, 
-              0, 0, 1 ]
-            initialJointPositions: [ 
-               0.000054, -0.003093, -0.262419,  0.681091, -0.418672,  0.003093,  0.000054, -0.003093, -0.262401,  0.681084, 
-              -0.418684,  0.003093,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.523599, -0.349066, 
-              -0.087266, -1.396263,  0.000000,  0.000000, -0.349066,  0.000000,  0.523599,  0.349066,  0.087266, -1.396263, 
-               0.000000,  0.000000, -0.349066,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
-               0.000000,  0.000000,  0.000000,  0.000000 ]
-            zmp: [ 0, 0, 0 ]
-            collisionDetection: true
-            selfCollisionDetection: false
-            isEditable: true
-          children: 
-            - 
-              id: 3
-              name: "BodyRTC"
-              plugin: OpenRTM
-              class: BodyRTCItem
-              data: 
-                isNoDelayMode: true
-                controllerOptions: ""
-                moduleName: "@hrpsys_choreonoid_DIR@/lib/RobotHardware_choreonoid"
-                confFileName: "@hrpsys_choreonoid_tutorials_DIR@/config/BodyRTC_JAXON_RED.RH.conf"
-                configurationMode: "Use Configuration File"
-                autoConnect: false
-                instanceName: "JAXON_RED(Robot)0"
-                bodyPeriodicRate: 0.002
-                baseDirectory: "RTC directory"
-            - 
-              id: 4
-              name: "DepthCameraPublisher"
-              plugin: ROSExt
-              class: DepthCameraPublisherItem
-              data: 
-                cameraName: rs_l515_depth_optical_frame
-                imageTopicName: ""
-                cameraInfoTopicName: ""
-                depthImageTopicName: rs_l515/depth/image_rect_raw
-                depthCameraInfoTopicName: rs_l515/depth/camera_info
-                pointCloudTopicName: rs_l515/depth_registered/points
-                frameId: ""
-                minDistance: 0
-                publishColor: false
-                publishDepth: true
-                publishPointCloud: true
-            - 
-              id: 5
-              name: "CameraPublisher"
-              plugin: ROSExt
-              class: CameraPublisherItem
-              data: 
-                cameraName: rs_l515_color_optical_frame
-                imageTopicName: rs_l515/color/image_raw
-                cameraInfoTopicName: rs_l515/color/camera_info
-                frameId: ""
-            - 
-              id: 6
-              name: "OdometryPublisher"
-              plugin: ROSExt
-              class: OdometryPublisherItem
-              data: 
-                targetName: rs_t265
-                odometryTopicName: rs_t265/odom/sample
-                frameId: ""
-                childFrameId: rs_t265_link
-                poseCovariance: 0
-                twistCovariance: 0
-                publishRate: 100
-        - 
-          id: 7
-          name: "floor"
-          plugin: Body
-          class: BodyItem
-          data: 
-            modelFile: "${SHARE}/model/misc/floor.body"
-            currentBaseLink: ""
+            modelFile: "/home/konishi/catkin_ws/kojio_tutorial/src/rtm-ros-robotics/rtmros_choreonoid/jvrc_models/models/visible_floor.wrl"
+            currentBaseLink: "BASE"
             rootPosition: [ 0, 0, -0.1 ]
             rootAttitude: [ 
               1, 0, 0, 
@@ -126,9 +36,61 @@ items:
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
-            isEditable: true
+            isEditable: false
         - 
-          id: 8
+          id: 3
+          name: "JAXON_RED"
+          plugin: Body
+          class: BodyItem
+          data: 
+            modelFile: "/home/konishi/catkin_ws/kojio_tutorial/src/msl_hand_controller/msl_hand_models/JAXON_RED_WITH_MSLHAND/JAXON_REDmain_bush.wrl"
+            currentBaseLink: "WAIST"
+            rootPosition: [ 0, 0, 1.0185 ]
+            rootAttitude: [ 
+              2.22044605e-16, -1, 0, 
+              1, 2.22044605e-16, 0, 
+              0, 0, 1 ]
+            jointPositions: [ 
+               0.000054, -0.003093, -0.262419,  0.681091, -0.418672,  0.003093,  0.000054, -0.003093, -0.262401,  0.681084, 
+              -0.418684,  0.003093,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.523599, -0.349066, 
+              -0.087266, -1.396263,  0.000000,  0.000000, -0.349066,  0.000000,  0.523599,  0.349066,  0.087266, -1.396263, 
+               0.000000,  0.000000, -0.349066,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
+               0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
+               0.000000 ]
+            initialRootPosition: [ 0, 0, 1.0185 ]
+            initialRootAttitude: [ 
+              2.22044605e-16, -1, 0, 
+              1, 2.22044605e-16, 0, 
+              0, 0, 1 ]
+            initialJointPositions: [ 
+               0.000054, -0.003093, -0.262419,  0.681091, -0.418672,  0.003093,  0.000054, -0.003093, -0.262401,  0.681084, 
+              -0.418684,  0.003093,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.523599, -0.349066, 
+              -0.087266, -1.396263,  0.000000,  0.000000, -0.349066,  0.000000,  0.523599,  0.349066,  0.087266, -1.396263, 
+               0.000000,  0.000000, -0.349066,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
+               0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
+               0.000000 ]
+            zmp: [ 0, 0, 0 ]
+            collisionDetection: true
+            selfCollisionDetection: false
+            isEditable: true
+          children: 
+            - 
+              id: 4
+              name: "BodyRTC"
+              plugin: OpenRTM
+              class: BodyRTCItem
+              data: 
+                isNoDelayMode: true
+                controllerOptions: ""
+                moduleName: "/home/konishi/catkin_ws/kojio_tutorial/src/rtm-ros-robotics/rtmros_choreonoid/hrpsys_choreonoid/lib/RobotHardware_choreonoid"
+                confFileName: "/home/konishi/catkin_ws/kojio_tutorial/src/msl_hand_controller/msl_hand_choreonoid_tutorials/config/BodyRTC_JAXON_RED.conf"
+                configurationMode: "Use Configuration File"
+                autoConnect: false
+                instanceName: "JAXON_RED(Robot)0"
+                bodyPeriodicRate: 0.002
+                baseDirectory: "RTC directory"
+        - 
+          id: 5
           name: "AISTSimulator"
           plugin: Body
           class: AISTSimulatorItem
@@ -156,89 +118,65 @@ items:
             kinematicWalking: false
             2Dmode: false
             oldAccelSensorMode: false
-          children: 
-            - 
-              id: 9
-              name: "GLVisionSimulator"
-              plugin: Body
-              class: GLVisionSimulatorItem
-              data: 
-                enabled: true
-                targetBodies: [ JAXON_RED ]
-                targetSensors: [ rs_l515_color_optical_frame ]
-                maxFrameRate: 1000
-                maxLatency: 1
-                recordVisionData: false
-                threadMode: Sensor
-                bestEffort: true
-                allSceneObjects: false
-                rangeSensorPrecisionRatio: 2
-                depthError: 0
-                enableHeadLight: true
-                enableAdditionalLights: true
-                antiAliasing: false
-            - 
-              id: 10
-              name: "GLVisionSimulator"
-              plugin: Body
-              class: GLVisionSimulatorItem
-              data: 
-                enabled: true
-                targetBodies: [ JAXON_RED ]
-                targetSensors: [ rs_l515_depth_optical_frame ]
-                maxFrameRate: 1000
-                maxLatency: 1
-                recordVisionData: false
-                threadMode: Sensor
-                bestEffort: true
-                allSceneObjects: false
-                rangeSensorPrecisionRatio: 2
-                depthError: 0
-                enableHeadLight: true
-                enableAdditionalLights: true
-                antiAliasing: false
+        - 
+          id: 6
+          name: "table"
+          plugin: Body
+          class: BodyItem
+          data: 
+            modelFile: "/home/konishi/catkin_ws/kojio_tutorial/src/box_tutorial/choreonoid/models/table.body"
+            currentBaseLink: "body"
+            rootPosition: [ 0, 1, 0 ]
+            rootAttitude: [ 
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
+            jointPositions: [  ]
+            initialRootPosition: [ 0, 1, 0 ]
+            initialRootAttitude: [ 
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
+            zmp: [ 0, 0, 0 ]
+            collisionDetection: true
+            selfCollisionDetection: false
+            isEditable: false
     - 
-      id: 11
-      name: "ros_service_server.py"
+      id: 7
+      name: "add_objects.py"
       plugin: Python
       class: PythonScriptItem
       data: 
-        file: "@hrpsys_choreonoid_DIR@/scripts/ros_service_server.py"
+        file: "/home/konishi/catkin_ws/kojio_tutorial/src/rtm-ros-robotics/rtmros_choreonoid/hrpsys_choreonoid/launch/add_objects.py"
         executionOnLoading: true
         backgroundExecution: false
 views: 
   - 
     id: 0
-    name: "CameraImage"
-    plugin: Base
-    class: ImageView
-    mounted: true
-  - 
-    id: 1
     plugin: Base
     class: ItemPropertyView
     mounted: true
   - 
-    id: 2
+    id: 1
     plugin: Base
     class: ItemTreeView
     mounted: true
     state: 
       selected: [ 1 ]
-      checked: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
-      expanded: [ 1, 2, 3 ]
+      checked: [ 1, 2, 3, 4, 5, 6, 7 ]
+      expanded: [ 1, 4 ]
   - 
-    id: 3
+    id: 2
     plugin: Base
     class: MessageView
     mounted: true
   - 
-    id: 4
+    id: 3
     plugin: Base
     class: SceneView
     mounted: true
     state: 
-      editMode: true
+      editMode: false
       viewpointControlMode: thirdPerson
       collisionLines: false
       polygonMode: fill
@@ -274,39 +212,31 @@ views:
         - 
           camera: [ System, Perspective ]
           isCurrent: true
-          fieldOfView: 0.6978
-          near: 0.01
-          far: 100
-          eye: [ -16.7814551, 0.804909114, 7.04189421 ]
-          direction: [ 0.930681408, 0.0502887225, -0.36235778 ]
-          up: [ 0.361829947, 0.0195512294, 0.932039076 ]
+          fieldOfView: 0.698132
+          near: 0.04
+          far: 200
+          eye: [ 5.00928923, -0.923925849, 2.28620207 ]
+          direction: [ -0.954188501, 0.11152583, -0.277644185 ]
+          up: [ -0.275766948, 0.0322317213, 0.960683978 ]
         - 
           camera: [ System, Orthographic ]
           orthoHeight: 20
-          near: 0.01
-          far: 100
+          near: 0.04
+          far: 200
       backgroundColor: [ 0.100000001, 0.100000001, 0.300000012 ]
       gridColor: [ 0.899999976, 0.899999976, 0.899999976, 1 ]
       xzgridColor: [ 0.899999976, 0.899999976, 0.899999976, 1 ]
       yzgridColor: [ 0.899999976, 0.899999976, 0.899999976, 1 ]
       dedicatedItemTreeViewChecks: false
   - 
-    id: 5
-    name: "Task"
-    plugin: Base
-    class: TaskView
-    state: 
-      layoutMode: horizontal
-      isAutoMode: false
-  - 
-    id: 6
+    id: 4
     plugin: Body
     class: BodyLinkView
     mounted: true
     state: 
       showRotationMatrix: false
   - 
-    id: 7
+    id: 5
     plugin: Body
     class: JointSliderView
     mounted: true
@@ -317,19 +247,22 @@ views:
       numColumns: 1
       spinBox: true
       slider: true
-      dial: false
+      dial: true
       labelOnLeft: true
+      currentBodyItem: 6
   - 
-    id: 8
+    id: 6
     plugin: Body
     class: LinkSelectionView
     mounted: true
     state: 
       listingMode: "Link List"
+      currentBodyItem: 6
   - 
-    id: 9
+    id: 7
     plugin: OpenRTM
     class: RTSNameServerView
+    mounted: true
     state: 
       NameServers: 
         - 
@@ -337,21 +270,23 @@ views:
           host: "localhost"
           port: 15005
   - 
-    id: 10
+    id: 8
     plugin: Python
     class: PythonConsoleView
     mounted: true
 toolbars: 
   "TimeBar": 
     minTime: 0
-    maxTime: 100
+    maxTime: 30
     frameRate: 1000
-    playbackFrameRate: 50
+    playbackFrameRate: 60
     idleLoopDrivenMode: false
     currentTime: 0
     speedScale: 1
-    syncToOngoingUpdates: false
+    syncToOngoingUpdates: true
     autoExpansion: true
+  "LeggedBodyBar": 
+    stanceWidth: 0.15
   "KinematicsBar": 
     mode: AUTO
     enablePositionDragger: true
@@ -360,8 +295,8 @@ toolbars:
     snapDistance: 0.025
     penetrationBlockDepth: 0.0005
     lazyCollisionDetectionMode: true
-  "LeggedBodyBar": 
-    stanceWidth: 0.15
+  "BodyBar": 
+    current: 6
   "BodyMotionGenerationBar": 
     autoGenerationForNewBody: true
     balancer: false
@@ -406,11 +341,16 @@ Body:
         showPpcom: false
         showZmp: false
       - 
-        bodyItem: 7
+        bodyItem: 3
         showCenterOfMass: false
         showPpcom: false
         showZmp: false
-    staticModelEditing: false
+      - 
+        bodyItem: 6
+        showCenterOfMass: false
+        showPpcom: false
+        showZmp: false
+    staticModelEditing: true
   "KinematicFaultChecker": 
     checkJointPositions: true
     angleMargin: 0
@@ -434,48 +374,53 @@ viewAreas:
     contents: 
       type: splitter
       orientation: horizontal
-      sizes: [ 212, 1031 ]
+      sizes: [ 670, 3166 ]
       children: 
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 729, 728 ]
+          sizes: [ 1016, 1016 ]
           children: 
             - 
               type: pane
-              views: [ 2 ]
-              current: 2
+              views: [ 1 ]
+              current: 1
             - 
               type: pane
-              views: [ 1, 8 ]
-              current: 1
+              views: [ 0, 6, 7 ]
+              current: 0
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 1457, 0 ]
+          sizes: [ 1742, 290 ]
           children: 
             - 
               type: splitter
               orientation: horizontal
-              sizes: [ 0, 1027 ]
+              sizes: [ 888, 2274 ]
               children: 
                 - 
                   type: pane
-                  views: [ 6, 7, 0 ]
-                  current: 6
+                  views: [ 4, 5 ]
+                  current: 4
                 - 
                   type: pane
-                  views: [ 4 ]
-                  current: 4
+                  views: [ 3 ]
+                  current: 3
             - 
               type: pane
-              views: [ 3, 10 ]
-              current: 3
+              views: [ 2, 8 ]
+              current: 2
 layoutOfToolBars: 
   rows: 
     - 
       - { name: "FileBar", x: 0, priority: 0 }
-      - { name: "ScriptBar", x: 47, priority: 3 }
-      - { name: "TimeBar", x: 47, priority: 1 }
-      - { name: "SceneBar", x: 1455, priority: 2 }
-      - { name: "SimulationBar", x: 1464, priority: 0 }
+      - { name: "ScriptBar", x: 49, priority: 0 }
+      - { name: "TimeBar", x: 98, priority: 0 }
+      - { name: "SceneBar", x: 1106, priority: 0 }
+      - { name: "GraphBar", x: 1387, priority: 0 }
+      - { name: "SimulationBar", x: 1500, priority: 0 }
+      - { name: "BodyMotionGenerationBar", x: 1709, priority: 0 }
+    - 
+      - { name: "BodyBar", x: 0, priority: 0 }
+      - { name: "KinematicsBar", x: 276, priority: 0 }
