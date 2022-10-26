@@ -3,9 +3,6 @@
   (jaxon_red-init)
   (setq *robot* *jaxon_red*)
   (load "carry_and_put_box2.l")
-  ;;(objects (list *robot*))
-  ;(send *robot* :limb :right_hand :angle-vector #F(0 90 0 0 0 0))
-  ;(send *ri* :angle-vector (send *robot* :angle-vector) 5000 :right_hand-controller) ;;右手だけが動く
   )
 
 ;push-recoveryから拝借
@@ -48,14 +45,28 @@
   (send *robot* :reset-manip-pose)
   (send *ri* :angle-vector (send *robot* :angle-vector) 5000)
   (lower-waist-no-reset)
+  (mslhand-ready 10)
   (send *ri* :go-pos 0.3 0 0)
   (ride-segwaymodel)
   (set-inp-param)
-  (hold-ready-no-reset)
-  (mslhand-ready)
+  (hold-ready-no-reset2)
+  (mslhand-ready 70)
   )
 
 (defun act1()
   (hand-insert)
+  (mslhand-ready 80)
+  (send *ri* :wait-interpolation)
   (liftup-box)
+  )
+
+(defun act2()
+  (put-box)
+  )
+
+(defun act2-1()
+  (send *robot* :reset-manip-pose)
+  (send *ri* :angle-vector (send *robot* :angle-vector))
+  (movemirror 200 0 -200)
+  (movemirror 0 -150 0)
   )
